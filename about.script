@@ -1,0 +1,21 @@
+document.addEventListener("DOMContentLoaded", () => {
+    const slides = document.querySelectorAll('.slide');
+    let currentIndex = 0;
+
+    function showSlide(index) {
+        slides.forEach((slide, i) => {
+            slide.classList.remove('show');
+            if (i === index) {
+                slide.classList.add('show');
+            }
+        });
+    }
+
+    showSlide(currentIndex);
+
+    // Automatic transition to next slide every 5 seconds
+    setInterval(() => {
+        currentIndex = (currentIndex + 1) % slides.length;
+        showSlide(currentIndex);
+    }, 5000);
+});
