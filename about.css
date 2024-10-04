@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff3e0; /
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+    height: 100%;
+}
+
+.half {
+    width: 50%; 
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    transition: opacity 0.5s ease;
+}
+
+.active {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.half:not(.active) {
+    opacity: 0;
+    pointer-events: none;
+}
+
+#about {
+    background-color: #ffedcc; }
+
+#contact {
+    background-color: #ffe0b2; 
+}
+
+h1 {
+    color: #ff7e00;
+    margin-bottom: 20px;
+}
+
+p {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.about-image {
+    max-width: 300px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.middle-text {
+    font-size: 2em;
+    color: #ff7e00; 
+    margin: 20px 120;
+    position: absolute;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    text-align: right;
+    opacity: 0.5; /
+}
+
+.button {
+    background: #ff7e00;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    margin-top: 20px; 
+}
+
+.button:hover {
+    background: #ffbc00;
+}
+
+.contact-info {
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Improved form styling */
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background: #fff; /* White background for the form */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+input, textarea {
+    padding: 10px;
+    border: 2px solid #ff7e00;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    transition: border-color 0.3s ease;
+}
+
+input:focus, textarea:focus {
+    border-color: #ffbc00; }
+
+button[type="submit"] {
+    background: #ff7e00;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background: #ffbc00;
+}
