@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us & Contact</title>
+    <link rel="stylesheet" href="about.css">
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a class="one" href="../home.html">Home</a></li>
+            <li><a class="two" href="../Courses/courses.html">Courses</a></li>
+            <li><a class="five">Know Us</a></li>
+            <li><a class="four" href="../Sign In/index.html">Sign In</a></li>
+
+            <div class="search-container">
+                <li><input type="text" id="search" placeholder="Search..."></li>
+                <img src="../Images/Screenshot 2024-09-26 at 12.20.09 AM.png" class="search-icon">
+            </div>
+        </ul>
+    </nav>
+
+
+    <div class="container">
+        <section id="about" class="half active">
+            <h1>About Us</h1>
+            <p>We are dedicated to providing exceptional service to our customers. Our mission is to ensure quality and satisfaction in every interaction.</p>
+            <p>Our team is composed of skilled professionals who work tirelessly to meet your needs and exceed expectations.</p>
+            <p>We value integrity, commitment, and innovation, striving to make a positive impact in our community.</p>
+            <button id="contactBtn" class="button">Contact Us</button>
+            <div class="contact-info">
+                <h3>Contact Information:</h3>
+                <p>Email: info@example.com</p>
+                <p>Phone: +123 456 7890</p>
+            </div>
+        </section>
+
+        <section id="contact" class="half">
+            <h1>Contact Page</h1> <!-- Initially hidden -->
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                
+                <button type="submit">Send Message</button>
+            </form>
+            <button id="aboutBtn" class="button">About Us</button>
+        </section>
+    </div>
+
+    <script src="about.js"></script>
+</body>
+</html>
